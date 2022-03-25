@@ -19,7 +19,7 @@ function IosHeader() {
       })
       setLastScrollTop(scrollTop < 0 ? 0 : scrollTop);
     }, 50));
-  }, []);
+  }, [null]);
 
   return (
     <div className="App">

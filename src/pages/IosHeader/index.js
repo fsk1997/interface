@@ -24,20 +24,23 @@ function IosHeader() {
   return (
     <div className="App">
       <div className="headers">
-        <header className="App-header-large" 
-          // style={{opacity: smallerHeaderFont,}}
-        >
+        <header className="App-header-large">
           <h1
             style={{
               transform: `scale(${smallerHeaderFont})`,
+              opacity: smallerHeaderFont,
               transformOrigin: "top left",
             }}
           >
             Scroll me!
           </h1>
         </header>
-        <header className="App-header-small" style={{transform: `translateY(-${smallerHeaderFont}00%)`}}>
-          <h1>
+        <header className="App-header-small"
+        style={{borderBottomColor: `rgba(230,230,230,${-smallerHeaderFont+0.5})`}}
+          >
+          <h1
+              style={{opacity: -smallerHeaderFont+0.8}}
+          >
             Continue scroll me!
           </h1>
         </header>

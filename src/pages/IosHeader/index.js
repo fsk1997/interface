@@ -23,17 +23,25 @@ function IosHeader() {
 
   return (
     <div className="App">
-      <header className="App-header-large">
-        <h1
-          style={{
-            transform: `scale(${smallerHeaderFont})`,
-            opacity: smallerHeaderFont,
-            transformOrigin: "top left",
-          }}
+      <div className="headers">
+        <header className="App-header-large" 
+          // style={{opacity: smallerHeaderFont,}}
         >
-          Scroll me!
-        </h1>
-      </header>
+          <h1
+            style={{
+              transform: `scale(${smallerHeaderFont})`,
+              transformOrigin: "top left",
+            }}
+          >
+            Scroll me!
+          </h1>
+        </header>
+        <header className="App-header-small" style={{transform: `translateY(-${smallerHeaderFont}00%)`}}>
+          <h1>
+            Continue scroll me!
+          </h1>
+        </header>
+      </div>
       <div className="content">
         {[...Array(50)].map((index) => (
           <p key={index}>this is some content</p>

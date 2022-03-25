@@ -1,0 +1,24 @@
+h1{
+  will-change: transform;
+  transition: transform .1s ease-out;
+}
+
+header{
+  padding:1rem;
+  padding-bottom:0rem;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+/* .App-header-large{
+  padding-top:3rem;
+} */
+
+/* .App-header-small{
+  font-size: 0.5rem;
+  text-align: center;  
+} */
+
+.content{
+  padding:0rem 1rem;
+}

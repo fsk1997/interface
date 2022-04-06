@@ -7,6 +7,10 @@ const BottomTabNavigator = () => {
   const [dismiss, setDismiss] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
+
+  // Idea: https://dev.to/nadeemkhanrtm/detect-scroll-direction-reactjs-1gnp
+
+
   useEffect(() => {
     window.addEventListener(
       "scroll",
@@ -21,7 +25,7 @@ const BottomTabNavigator = () => {
         setLastScrollTop(window.scrollY);
         //if scrolltop is less than 0, then set lastScrollTop to 0.
         //if scrolltop is more than 0, then set lastScrollTop to current scrollTop
-      }, 50)
+      }, 1000)
     );
   }, [window.scrollY]);
 

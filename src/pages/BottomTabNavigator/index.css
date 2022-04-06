@@ -11,17 +11,25 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    width: 95vw; 
+    width: 100%; 
     background-color:lightgray; 
     padding: 1rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
+    /* transition: transform .1s ease-out; */
+    transform: translateY(0%);
+    transition: transform .1s ease-out;
+}
+
+.tab-container.tab-dismiss{
+    transform: translateY(100%);
+    transition: transform .3s ease-out;
 }
 
 .tab-container > div{
-    outline: 1px red solid;
+    /* outline: 1px red solid; */
     width: 100%;
     display: flex;
     justify-content: center;

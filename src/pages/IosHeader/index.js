@@ -12,9 +12,11 @@ function IosHeader() {
       requestAnimationFrame(()=>{
         if (scrollTop < lastScrollTop) {
           setSmallerHeaderFont(smallerHeaderFont + (window.scrollY / 100));
+          console.log('scrolling up')
         } 
         if (scrollTop > lastScrollTop ) {
           setSmallerHeaderFont(smallerHeaderFont - (window.scrollY / 100));
+          console.log('scrolling down')
         }    
       })
       setLastScrollTop(scrollTop < 0 ? 0 : scrollTop);

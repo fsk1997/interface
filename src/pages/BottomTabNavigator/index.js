@@ -12,19 +12,18 @@ const BottomTabNavigator = () => {
       "scroll",
       throttle(() => {
         if (window.scrollY < lastScrollTop) {
-          // console.log('scrolling up', window.scrollY, lastScrollTop, dismiss)
+          console.log("scrolling up", window.scrollY, lastScrollTop, dismiss);
           setDismiss(false);
-        }
-        if (window.scrollY > lastScrollTop) {
-          // console.log('scrolling down', window.scrollY, lastScrollTop, dismiss)
+        } else {
+          console.log("scrolling down", window.scrollY, lastScrollTop, dismiss);
           setDismiss(true);
         }
         setLastScrollTop(window.scrollY);
         //if scrolltop is less than 0, then set lastScrollTop to 0.
         //if scrolltop is more than 0, then set lastScrollTop to current scrollTop
-      }, 750)
+      }, 50)
     );
-  }, [lastScrollTop, dismiss]);
+  }, [window.scrollY]);
 
   return (
     <div className="page">

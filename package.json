@@ -2,6 +2,7 @@
   "name": "react-experiment",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://react-exp.saykiat.com/",
   "dependencies": {
     "next": "latest",
     "react": "latest",

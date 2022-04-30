@@ -9,7 +9,7 @@ const LoadedImage = () => {
       {loaded == "loaded" ? (
         <div>
             <p>Image load succesfully!</p>
-            <Link href="/loaded-image">Refresh da page</Link>
+            <a href="/loaded-image">Refresh da page</a>
             <p> </p>
         </div>
       ) : (

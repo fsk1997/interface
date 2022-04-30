@@ -9,7 +9,7 @@ const Index = () => {
         Homepage
       </h1>
       <p>
-        <Link href="/iosheader">iOS Header</Link>
+        <Link href="/ios-header">iOS Header</Link>
       </p>
       <p>
         <Link href="/bottom-tab-navigator">Bottom Tab Navigator</Link>

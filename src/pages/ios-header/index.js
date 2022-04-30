@@ -1,6 +1,6 @@
-// import "./index.css";
 import { useEffect, useState } from "react";
 import { throttle } from "underscore";
+import styles from "./index.module.css"
 
 function IosHeader() {
   const [smallerHeaderFont, setSmallerHeaderFont] = useState(1);
@@ -25,9 +25,10 @@ function IosHeader() {
 
   return (
     <div className="App">
-      <div className="headers">
-        <header className="App-header-large">
+      <div className={styles.headers}>
+        <header className={styles.HeaderLarge}>
           <h1
+            className={styles.h1}
             style={{
               transform: `scale(${smallerHeaderFont})`,
               opacity: smallerHeaderFont,
@@ -37,7 +38,7 @@ function IosHeader() {
             Scroll me!
           </h1>
         </header>
-        <header className="App-header-small"
+        <header className={styles.HeaderSmall}
         style={{borderBottomColor: `rgba(230,230,230,${-smallerHeaderFont+0.5})`}}
           >
           <h1

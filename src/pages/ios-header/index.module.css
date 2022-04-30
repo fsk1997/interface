@@ -1,4 +1,4 @@
-h1{
+.h1{
   will-change: transform;
   transition: transform .1s ease-out;
 }
@@ -7,7 +7,7 @@ h1{
   position:relative;
 }
 
-.App-header-large{
+.HeaderLarge{
   padding:1rem;
   padding-top:3rem;
   padding-bottom:0rem;
@@ -20,7 +20,7 @@ h1{
 }
 
 
-.App-header-small{
+.HeaderSmall{
   background-color: rgba(255,255,255, 1);
   backdrop-filter: blur(0.1rem);
   border-bottom: 1.2px solid;

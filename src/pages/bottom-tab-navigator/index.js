@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { throttle } from "underscore";
+import styles from "./index.module.css"
 
 const BottomTabNavigator = () => {
   const [dismiss, setDismiss] = useState(false);
@@ -29,14 +30,14 @@ const BottomTabNavigator = () => {
   }, [lastScrollTop]);
 
   return (
-    <div className="page">
+    <div className={styles.page}>
       <div className="page-content">
         <h1>BottomTabNavigator (Still Buggy)</h1>
         {[...Array(50)].map((index) => (
           <p key={index}>this is some content</p>
         ))}
       </div>
-      <div className={`tab-container ${dismiss ? "tab-dismiss" : ""}`}>
+      <div className={`${styles.tabContainer} ${dismiss ? styles.tabDismiss : null}`}>
         <div>
           <Link href="/">text 1</Link>
         </div>

@@ -5,7 +5,7 @@
     padding: 1rem;
 }
 
-.tab-container{
+.tabContainer{
     position: fixed;
     z-index: 10;
     left: 0px;
@@ -23,12 +23,12 @@
     transition: transform .1s ease-out;
 }
 
-.tab-container.tab-dismiss{
+.tabDismiss{
     transform: translateY(100%);
     transition: transform .1s ease-in;
 }
 
-.tab-container > div{
+.tabContainer > div{
     /* outline: 1px red solid; */
     width: 100%;
     display: flex;

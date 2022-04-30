@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Link from "next/link";
+import styles from "./index.module.css"
 
 const LoadedImage = () => {
   const [loaded, setLoaded] = useState("not-loaded");
@@ -26,7 +26,7 @@ const LoadedImage = () => {
       >
         <img
           style={{ objectFit: "cover", width: '100%' }}
-          className={loaded}
+          className={`${loaded === "not-loaded" ? styles.notLoaded : styles.loaded} + ${styles.image}`}
           src="https://source.unsplash.com/1200x400"
           onLoad={() => setLoaded("loaded")}
           width="400"

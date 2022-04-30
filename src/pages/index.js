@@ -11,7 +11,7 @@ const Index = () => {
         <Link href="/ios-header">iOS Header</Link>
       </p>
       <p>
-        <Link href="/bottom-tab-navigator">Bottom Tab Navigator</Link>
+        <Link href="/bottom-tab-navigator">Bottom Tab Navigator (Still Buggy)</Link>
       </p>
       <p>
         <Link href="/loaded-image">Loaded Image Transition</Link>

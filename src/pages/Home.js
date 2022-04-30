@@ -15,6 +15,9 @@ const Home = () => {
         <p>
           <Link to="/bottom-tab-navigator">Bottom Tab Navigator</Link>
         </p>
+        <p>
+          <Link to="/loaded-image">Loaded Image Transition</Link>
+        </p>
       </div>
     );
 }

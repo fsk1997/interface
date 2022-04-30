@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./index.css";
+import Link from "next/link";
 
 const LoadedImage = () => {
   const [loaded, setLoaded] = useState("not-loaded");
@@ -10,7 +9,7 @@ const LoadedImage = () => {
       {loaded == "loaded" ? (
         <div>
             <p>Image load succesfully!</p>
-            <a href="/loaded-image">Refresh da page</a>
+            <Link href="/loaded-image">Refresh da page</Link>
             <p> </p>
         </div>
       ) : (

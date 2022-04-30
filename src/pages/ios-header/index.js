@@ -1,4 +1,4 @@
-import "./index.css";
+// import "./index.css";
 import { useEffect, useState } from "react";
 import { throttle } from "underscore";
 

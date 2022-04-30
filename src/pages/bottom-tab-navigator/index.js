@@ -1,6 +1,5 @@
-import "./index.css";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { throttle } from "underscore";
 
 const BottomTabNavigator = () => {
@@ -27,31 +26,31 @@ const BottomTabNavigator = () => {
         //if scrolltop is more than 0, then set lastScrollTop to current scrollTop
       }, 1000)
     );
-  }, [window.scrollY]);
+  }, [lastScrollTop]);
 
   return (
     <div className="page">
       <div className="page-content">
-        <h1>BottomTabNavigator</h1>
+        <h1>BottomTabNavigator (Still Buggy)</h1>
         {[...Array(50)].map((index) => (
           <p key={index}>this is some content</p>
         ))}
       </div>
       <div className={`tab-container ${dismiss ? "tab-dismiss" : ""}`}>
         <div>
-          <Link to="/">text 1</Link>
+          <Link href="/">text 1</Link>
         </div>
         <div>
-          <Link to="/">text longer text</Link>
+          <Link href="/">text longer text</Link>
         </div>
         <div>
-          <Link to="/">text 3</Link>
+          <Link href="/">text 3</Link>
         </div>
         <div>
-          <Link to="/">text 4</Link>
+          <Link href="/">text 4</Link>
         </div>
         <div>
-          <Link to="/">text 5</Link>
+          <Link href="/">text 5</Link>
         </div>
       </div>
     </div>

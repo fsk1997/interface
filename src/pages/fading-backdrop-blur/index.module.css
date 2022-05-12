@@ -1,19 +1,21 @@
 .wrapper{
-    max-width: 75vw;
+    max-width: 90vw;
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
     border-radius: 0.25rem;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     background-color: black; /*important so there is no "white line" in the middle*/
 
 }
 
 .wrapper img {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    object-fit: cover;
+    object-position: center;
     transform: scale(105%);
 }
 

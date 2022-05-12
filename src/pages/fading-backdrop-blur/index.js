@@ -23,7 +23,7 @@ const Image = ({ imageLink, title }) => {
       <div className={styles.overlay} />
       <div className={styles.content}>
         <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
-          <h1>{title}</h1>
+          <h3>{title}</h3>
         </div>
       </div>
     </div>

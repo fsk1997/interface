@@ -16,6 +16,9 @@ const Index = () => {
       <p>
         <Link href="/loaded-image">Loaded Image Transition</Link>
       </p>
+      <p>
+        <Link href="/fading-backdrop-blur">Fading Backdrop Blur</Link>
+      </p>
     </div>
   );
 }

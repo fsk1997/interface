@@ -2,10 +2,13 @@
     max-width: 75vw;
     margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     position: relative;
     overflow: hidden;
     border-radius: 0.25rem;
     aspect-ratio: 16/9;
+    background-color: black; /*important so there is no "white line" in the middle*/
+
 }
 
 .wrapper img {

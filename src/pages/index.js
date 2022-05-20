@@ -19,6 +19,9 @@ const Index = () => {
       <p>
         <Link href="/fading-backdrop-blur">Fading Backdrop Blur</Link>
       </p>
+      <p>
+        <Link href="/sticky-header-links">Sticky Header Links</Link>
+      </p>
     </div>
   );
 }

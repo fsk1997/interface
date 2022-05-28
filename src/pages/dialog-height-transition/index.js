@@ -46,6 +46,11 @@ const DialogHeightTransition = () => {
     }, 150);
   };
 
+  const transitionStyle =  {
+    opacity: `${zeroOpacity ? "0%" : "100%"}`,
+    transform: `${transform ? "scale(0%)" : "scale(100%)"}`
+  }
+
   return (
     <div className={styles.page}>
       {showDialog ? (
@@ -95,7 +100,18 @@ const DialogHeightTransition = () => {
               </button>
             </div>
             <div className={styles.content}>
-              <div>
+              {switchContent ? 
+                <div style={transitionStyle}>
+                    <img src="https://media2.malaymail.com/uploads/articles/2020/2020-01/jihyo_070120.jpg" alt="Jihyo from Twice"/>
+                    <p>JYP Entertainment had scouted Jihyo after she participated in a contest on Junior Naver and placed second. She then joined JYP Entertainment as a trainee at the age of eight and trained for ten years before her debut.</p>
+                </div>
+                : 
+                <div style={transitionStyle}>
+                    <img src="https://64.media.tumblr.com/169440c74ac5b01cea71f225d535ebb8/dca73683daa8345f-72/s1280x1920/b45cfd8873719663d5e0225313948c4c7f21fcff.jpg" alt="Jihyo from Twice"/>
+                    <p>Park Ji-hyo (Korean: 박지효; born Park Ji-soo on February 1, 1997), known mononymously as Jihyo, is a South Korean singer. She is the leader and vocalist of the South Korean girl group Twice formed by JYP Entertainment. </p>
+                </div>
+              }
+              {/* <div>
                 <img
                   style={{
                     opacity: `${zeroOpacity ? "0%" : "100%"}`,
@@ -103,11 +119,11 @@ const DialogHeightTransition = () => {
                   }}
                   src={
                     switchContent
-                      ? `https://kpopping.com/documents/49/1/2048/211226-TWICE-4th-World-Tour-Jihyo-documents-1.jpeg?v=40198`
-                      : `https://i.pinimg.com/474x/a0/24/49/a02449e5de944ee726d431256940a462.jpg`
+                      ? `https://media2.malaymail.com/uploads/articles/2020/2020-01/jihyo_070120.jpg`
+                      : `https://64.media.tumblr.com/169440c74ac5b01cea71f225d535ebb8/dca73683daa8345f-72/s1280x1920/b45cfd8873719663d5e0225313948c4c7f21fcff.jpg`
                   }
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

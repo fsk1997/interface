@@ -22,6 +22,9 @@ const Index = () => {
       <p>
         <Link href="/sticky-header-links">Sticky Header Links</Link>
       </p>
+      <p>
+        <Link href="/dialog-height-transition">Dialog Height Transition</Link>
+      </p>
     </div>
   );
 }

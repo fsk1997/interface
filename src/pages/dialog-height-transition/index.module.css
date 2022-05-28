@@ -50,15 +50,13 @@
     margin-right:0.5rem;
 }
 
-.content{
-    width: 100%;
-}
-.content div{
-
-}
 .content img{
     width: 100%;
     border-radius: 0.25rem;
+}
+
+.content > div{
     transition: opacity 0.5s ease-out;
     transform-origin: top left;
 }
+

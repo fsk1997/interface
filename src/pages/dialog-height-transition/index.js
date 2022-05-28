@@ -39,6 +39,13 @@ const DialogHeightTransition = () => {
     }, 300);
   }, [zeroOpacity]);
 
+  const prepForDialog = () => {
+    setShowDialog(true);
+    setTimeout(function() {
+      setChangeDialogHeight(dialogEl.current.clientHeight);
+    }, 150);
+  };
+
   return (
     <div className={styles.page}>
       {showDialog ? (
@@ -105,7 +112,7 @@ const DialogHeightTransition = () => {
           </div>
         </div>
       ) : (
-        <button onClick={() => setShowDialog(true)}>Click for Jihyo!</button>
+        <button onClick={prepForDialog}>Click for Jihyo!</button>
       )}
     </div>
   );

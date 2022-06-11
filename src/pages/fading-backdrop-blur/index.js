@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./index.module.css";
+import * as styles from "./index.module.css";
 
 const Image = ({ imageLink, title }) => {
   return (

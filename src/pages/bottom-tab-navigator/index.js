@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "gatsby";
 import { throttle } from "underscore";
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 const BottomTabNavigator = () => {
   const [dismiss, setDismiss] = useState(false);
@@ -39,19 +39,19 @@ const BottomTabNavigator = () => {
       </div>
       <div className={`${styles.tabContainer} ${dismiss ? styles.tabDismiss : null}`}>
         <div>
-          <Link href="/">text 1</Link>
+          <Link to="/">text 1</Link>
         </div>
         <div>
-          <Link href="/">text longer text</Link>
+          <Link to="/">text longer text</Link>
         </div>
         <div>
-          <Link href="/">text 3</Link>
+          <Link to="/">text 3</Link>
         </div>
         <div>
-          <Link href="/">text 4</Link>
+          <Link to="/">text 4</Link>
         </div>
         <div>
-          <Link href="/">text 5</Link>
+          <Link to="/">text 5</Link>
         </div>
       </div>
     </div>

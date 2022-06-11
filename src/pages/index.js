@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from "gatsby";
 
 const Index = () => {
   return (
@@ -8,22 +8,22 @@ const Index = () => {
         Homepage
       </h1>
       <p>
-        <Link href="/ios-header">iOS Header</Link>
+        <Link to="/ios-header">iOS Header</Link>
       </p>
       <p>
-        <Link href="/bottom-tab-navigator">Bottom Tab Navigator (Still Buggy)</Link>
+        <Link to="/bottom-tab-navigator">Bottom Tab Navigator (Still Buggy)</Link>
       </p>
       <p>
-        <Link href="/loaded-image">Loaded Image Transition</Link>
+        <Link to="/loaded-image">Loaded Image Transition</Link>
       </p>
       <p>
-        <Link href="/fading-backdrop-blur">Fading Backdrop Blur</Link>
+        <Link to="/fading-backdrop-blur">Fading Backdrop Blur</Link>
       </p>
       <p>
-        <Link href="/sticky-header-links">Sticky Header Links</Link>
+        <Link to="/sticky-header-links">Sticky Header Links</Link>
       </p>
       <p>
-        <Link href="/dialog-height-transition">Dialog Height Transition</Link>
+        <Link to="/dialog-height-transition">Dialog Height Transition</Link>
       </p>
       <br/>
       <br/>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./index.module.css";
-import { useRouter } from "next/router";
+import * as styles from "./index.module.css";
+
 
 // Problem with using plain useState loading method: https://www.codingwithjesse.com/blog/image-onload-isnt-being-called/
 // Solution: https://stackoverflow.com/questions/57162865/react-onload-event-on-image-tag-is-not-getting-called-when-using-conditional-ren
@@ -35,11 +35,11 @@ const Image = ({ src }) => {
 };
 
 const RefreshButton = () => {
-  const router = useRouter();
+
   return (
     <button
       style={{ marginTop: "1rem", marginBottom: "1rem" }}
-      onClick={() => router.reload(window.location.pathname)}
+      onClick={() => window.location.reload()}
     >
       🤜 Refresh for Dahyun 🤛
     </button>

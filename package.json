@@ -1,17 +1,29 @@
 {
-  "name": "react-experiment",
-  "version": "0.1.0",
+  "name": "interface",
+  "version": "1.0.0",
   "private": true,
-  "homepage":"https://react-exp.saykiat.com/",
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "underscore": "^1.13.3"
-  },
+  "description": "",
+  "author": "Fong Say Kiat",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "gatsby": "^4.16.0",
+    "gatsby-plugin-google-gtag": "^4.16.0",
+    "gatsby-plugin-image": "^2.16.1",
+    "gatsby-plugin-netlify": "^5.0.0",
+    "gatsby-plugin-robots-txt": "^1.7.1",
+    "gatsby-plugin-sharp": "^4.16.1",
+    "gatsby-plugin-sitemap": "^5.16.0",
+    "gatsby-source-filesystem": "^4.16.0",
+    "gatsby-transformer-sharp": "^4.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "underscore": "^1.13.4"
   }
 }

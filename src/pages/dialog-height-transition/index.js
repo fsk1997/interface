@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./index.module.css";
+import * as styles from "./index.module.css";
 
 const DialogHeightTransition = () => {
   const [showDialog, setShowDialog] = useState(false);

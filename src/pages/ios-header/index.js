@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { throttle } from "underscore";
-import styles from "./index.module.css"
+import * as styles from "./index.module.css"
 
 function IosHeader() {
   const [smallerHeaderFont, setSmallerHeaderFont] = useState(1);

@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { Link } from "gatsby";
 import React from "react";
-import styles from "./index.module.css";
+import * as styles from "./index.module.css";
 
 const StickyHeaderLinks = () => {
   return (
@@ -8,7 +8,6 @@ const StickyHeaderLinks = () => {
       <header className={styles.header}>
         <img
           src="https://voguegirl.jp/wp-content/uploads/2022/05/adidas-7-1.jpg"
-          alt="Random Image"
           width="1200"
           height="800"
         />
@@ -19,11 +18,11 @@ const StickyHeaderLinks = () => {
           </h1>
           <div>
             <ul className={styles.container}>
-              <li><Link href="/ios-header">Link</Link></li>
-              <li><Link href="/bottom-tab-navigator">Link</Link></li>
-              <li><Link href="/loaded-image">Link</Link></li>
-              <li><Link href="/fading-backdrop-blur">Link</Link></li>
-              <li><Link href="/sticky-background-image">Link</Link></li>
+              <li><Link to="/ios-header">Link</Link></li>
+              <li><Link to="/bottom-tab-navigator">Link</Link></li>
+              <li><Link to="/loaded-image">Link</Link></li>
+              <li><Link to="/fading-backdrop-blur">Link</Link></li>
+              <li><Link to="/sticky-background-image">Link</Link></li>
             </ul>
           </div>
         </div>
@@ -43,7 +42,6 @@ const StickyHeaderLinks = () => {
           <img
             className={styles.container}
             src="https://voguegirl.jp/wp-content/uploads/2022/05/final_adidas.jpg"
-            alt="random image"
           />
           <figcaption>
             スニーカー FORUM MID PARLEY（GV7616）￥16,000 パンツ￥8,789
@@ -66,7 +64,6 @@ const StickyHeaderLinks = () => {
           <img
             className={styles.container}
             src="https://voguegirl.jp/wp-content/uploads/2022/05/adidas-5-1.jpg"
-            alt="random image"
           />
           <figcaption>
             スニーカー NIZZA HI PARLEY（GV7607）￥11,000 ソックス￥1,980／ともに

@@ -29,7 +29,7 @@ const Index = () => {
       <br/>
       <br/>
       <p>
-        <a target="_blank" href="https://github.com/fsk1997/react-experiment">Visit the Github Repo</a>
+        <a target="_blank" href="https://github.com/fsk1997/interface">Visit the Github Repo</a>
       </p>
     </div>
   );

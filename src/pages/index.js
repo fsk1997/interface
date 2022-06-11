@@ -25,6 +25,12 @@ const Index = () => {
       <p>
         <Link href="/dialog-height-transition">Dialog Height Transition</Link>
       </p>
+      <br/>
+      <br/>
+      <br/>
+      <p>
+        <a target="_blank" href="https://github.com/fsk1997/react-experiment">Visit the Github Repo</a>
+      </p>
     </div>
   );
 }

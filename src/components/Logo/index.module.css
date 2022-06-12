@@ -1,0 +1,44 @@
+
+/* ====================
+Logo 
+=====================*/
+.logo{
+    width: 100%;
+    padding:1rem 0rem;
+}
+
+.logo p {
+    padding: 0;
+    margin: 0;
+}
+
+.logo p:nth-child(1) span:nth-child(1) {
+    font-family: var(--font-bold);
+    font-size: 1.25rem;
+    color: var(--gold12)
+}
+
+.logo p:nth-child(1) span:nth-child(2) {
+    font-family: var(--font-bold);
+    font-size: 2.5rem;
+    color: var(--red9);
+    line-height: 0%;
+    animation: blinkThrice 2s steps(5, start) infinite;
+}
+
+@keyframes blinkThrice {
+    to {
+        visibility: hidden;
+    }
+}
+
+.logo p:nth-child(2){
+    font-family: var(--font-medium);
+    font-size: 0.8rem;
+    color: var(--gray11);
+    margin-top: -0.125rem;
+}
+.logo p:nth-child(2) a{
+    text-decoration: underline;
+    color: var(--gray11);
+}

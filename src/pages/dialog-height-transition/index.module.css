@@ -1,10 +1,9 @@
 .page{
-    background-color:rgba(0,0,0,0.05);
-    height:100vh;
+    /* background-color:rgba(0,0,0,0.05); */
+    height:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .dialog{
@@ -25,7 +24,7 @@
     left:0px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 0.5rem;
-    outline: 1px rgba(0,0,0,0.03) solid;
+    outline: 1px rgba(255,255,255,0.1) solid;
     background-color:white;
     transition: height 0.3s ease-out;
 }
@@ -58,5 +57,6 @@
 .content > div{
     transition: opacity 0.5s ease-out;
     transform-origin: top left;
+    color:black;
 }
 

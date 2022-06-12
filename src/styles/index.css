@@ -1,14 +1,80 @@
+@import "normalize.css";
+
+/* =====================
+Variables 
+========================*/
+:root{
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --2xl: 1536px;
+
+  --font-extralight: 'Switzer-ExtraLight', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-extralightitalic: 'Switzer-ExtraLightItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-light: 'Switzer-Light', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-lightitalic: 'Switzer-LightItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-thin: 'Switzer-Thin', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-thinitalic: 'Switzer-ThinItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-light: 'Switzer-Light', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-lightitalic: 'Switzer-LightItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-regular: 'Switzer-Regular', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-italic: 'Switzer-Italic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-semibold: 'Switzer-Semibold', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-semibolditalic: 'Switzer-SemiboldItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-medium: 'Switzer-Medium', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-mediumitalic: 'Switzer-MediumItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-bold: 'Switzer-Bold', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-bolditalic: 'Switzer-BoldItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-extrabold: 'Switzer-Extrabold', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-extrabolditalic: 'Switzer-ExtraboldItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-black: 'Switzer-Black', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-blackitalic: 'Switzer-BlackItalic', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+  --transition-slow: all 0.3s ease-in;
+  --transition-mid: all 0.2s ease-in;
+  --transition-fast: all 0.1s ease-in;
+}
+
+
+*{
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+}
+
+/* =====================
+Theme 
+========================*/
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
+  font-family: var(--font-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--gray12);
+  background-color: var(--gold4);
+  transition: var(--transition-fast);
+}
+
+
+/* =====================
+Typography
+========================*/
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-bold);
+  letter-spacing: -0.5px;
+  color: var(--gray12);
+}
+
+a, button {
+  font-family: var(--font-medium);
+  text-decoration: none;
+  color: var(--blue11);
+  transition: var(--transition-slow)
+}
+
+a:hover{
+  color: var(--blue9);
+  transition: var(--transition-mid)
+}

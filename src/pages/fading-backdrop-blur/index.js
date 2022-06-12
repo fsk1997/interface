@@ -1,6 +1,11 @@
 import React from "react";
 import * as styles from "./index.module.css";
 
+// Non essential imports
+import Layout from "../../components/Layout";
+import { useStaticQuery, graphql } from "gatsby";
+import { projectFragment } from "../../fragments/projectFragment";
+
 const Image = ({ imageLink, title }) => {
   return (
     <div className={styles.wrapper}>
@@ -31,8 +36,23 @@ const Image = ({ imageLink, title }) => {
 };
 
 const FadingBackdropBlur = () => {
+  const data = useStaticQuery(graphql`
+    {
+      pageJson(slug: { eq: "loaded-image-transition" }) {
+        ...projectFragment
+      }
+    }
+  `);
+
+   const project = data.pageJson;
+
   return (
-    <>
+    <Layout
+      customTitle={`${project.title} | Interface. by SayKiat`}
+      customDescription={project.description}
+      customURL={`https://interface.saykiat.com/${project.slug}`}
+      projectMode={project.mode}
+    >
       <Image
         imageLink={"https://c.tenor.com/UqzojRtY8eAAAAAd/aot-mikasa.gif"}
         title={"ミカサ・アッカーマン Mikasa Akkāman 💖"}
@@ -50,9 +70,7 @@ const FadingBackdropBlur = () => {
         title={"Sasuke Uchiha (うちは サスケ)"}
       />
       <Image
-        imageLink={
-          "https://c.tenor.com/YoZqAb8YA0kAAAAC/apple-tim-cook.gif"
-        }
+        imageLink={"https://c.tenor.com/YoZqAb8YA0kAAAAC/apple-tim-cook.gif"}
         title={"Tim Cook (ティム・クック)"}
       />
       <p style={{ textAlign: "center" }}>
@@ -61,7 +79,7 @@ const FadingBackdropBlur = () => {
           other browsers too!
         </b>
       </p>
-    </>
+    </Layout>
   );
 };
 

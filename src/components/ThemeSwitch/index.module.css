@@ -1,0 +1,60 @@
+
+/* ====================
+Theme Switcher 
+=====================*/
+
+.themeSwitch {
+    position: relative;
+    display: block;
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+.themeSwitch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.themeSwitch span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gold12);
+    -webkit-transition: var(--transition-mid);
+    transition: var(--transition-mid);
+}
+
+.themeSwitch span:before {
+    position: absolute;
+    content: "";
+    height: 1.1rem;
+    width: 1.1rem;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    background-color: var(--gold2);
+    -webkit-transition: var(--transition-mid);
+    transition: var(--transition-mid);
+}
+
+.themeSwitch input:checked+span {
+    background-color: var(--gold12);
+}
+
+.themeSwitch input:checked+span:before {
+    -webkit-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    transform: translateX(1rem);
+}
+
+.themeSwitch span {
+    border-radius: 999px;
+}
+
+.themeSwitch span:before {
+    border-radius: 999px;
+}
+

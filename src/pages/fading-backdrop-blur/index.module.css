@@ -48,6 +48,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.content h3{
     color:white;
     text-shadow: 2px 2px #000000;
 }

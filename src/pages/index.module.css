@@ -1,0 +1,22 @@
+.projectList{
+    width: 100%;
+    border-top: 1px solid;
+    border-color: var(--gray7);
+    transition: var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding:2rem 0rem;
+}
+
+.projectList h3{
+    color: var(--gold11);
+    padding:0px;
+    margin:0px;
+    font-size: 1.75rem;
+    transition: var(--transition-fast);
+}
+.projectList h3:hover{
+    color: var(--gold12);
+    transition: var(--transition-fast);
+}

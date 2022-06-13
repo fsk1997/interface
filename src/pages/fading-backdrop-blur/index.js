@@ -38,7 +38,7 @@ const Image = ({ imageLink, title }) => {
 const FadingBackdropBlur = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "loaded-image-transition" }) {
+      pageJson(slug: { eq: "fading-backdrop-blur" }) {
         ...projectFragment
       }
     }

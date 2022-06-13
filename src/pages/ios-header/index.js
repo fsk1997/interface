@@ -10,7 +10,7 @@ import { projectFragment } from "../../fragments/projectFragment";
 const IosHeader = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "loaded-image-transition" }) {
+      pageJson(slug: { eq: "ios-header" }) {
         ...projectFragment
       }
     }

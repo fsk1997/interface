@@ -33,7 +33,7 @@ const Seo = ({
           name="description"
           content={customDescription || meta.description}
         />
-        <meta name="author" content={customTitle || meta.title} />
+        <meta name="author" content={"Fong Say Kiat"} />
 
         {/* Facebook metadata */}
         <meta property="og:title" content={customTitle || meta.title} />
@@ -66,7 +66,7 @@ const Seo = ({
         <meta name="twitter:creator" content="@SayKiat_____" />
 
         {/* Page Specific metadata */}
-        <title>{customTitle}</title>
+        <title>{customTitle || meta.title}</title>
         <link rel="canonical" href={customURL || meta.url} />
         <meta
           name="google-site-verification"

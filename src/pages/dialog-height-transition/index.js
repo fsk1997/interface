@@ -9,7 +9,7 @@ import { projectFragment } from "../../fragments/projectFragment";
 const DialogHeightTransition = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "loaded-image-transition" }) {
+      pageJson(slug: { eq: "dialog-height-transition" }) {
         ...projectFragment
       }
     }

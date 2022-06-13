@@ -11,7 +11,7 @@ import { projectFragment } from "../../fragments/projectFragment";
 const BottomTabNavigator = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "loaded-image-transition" }) {
+      pageJson(slug: { eq: "bottom-tab-navigator" }) {
         ...projectFragment
       }
     }

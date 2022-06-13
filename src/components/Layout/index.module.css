@@ -84,14 +84,14 @@ Header
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0rem 1rem;
+    /* padding: 0rem 1rem; */
     margin: 0 auto;
 }
 
 .headerNoPadding{
     /* position: fixed;
     z-index: 10; */
-    padding: 0rem;
+    /* padding: 0rem; */
 }
 
 .headerLogo {

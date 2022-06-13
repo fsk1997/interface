@@ -10,7 +10,14 @@ const Menu = () => {
       allPageJson {
         edges {
           node {
-            ...projectFragment
+            created_at
+            description
+            github_css
+            github_js
+            id
+            title
+            slug
+            mode
           }
         }
       }

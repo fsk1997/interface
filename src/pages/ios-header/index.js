@@ -57,6 +57,7 @@ const IosHeader = () => {
                 transform: `scale(${smallerHeaderFont})`,
                 opacity: smallerHeaderFont,
                 transformOrigin: "top left",
+                marginTop:'5rem' //remove this line on your real application
               }}
             >
               Scroll me!
@@ -68,7 +69,7 @@ const IosHeader = () => {
               borderBottomColor: `rgba(230,230,230,${
                 -smallerHeaderFont + 0.5
               })`, 
-              width:"50%" //amend this to 100% in real applications
+              marginTop:'4.2rem' //remove this line on your real application
             }}
           >
             <h1 style={{ opacity: -smallerHeaderFont + 0.8 }}>

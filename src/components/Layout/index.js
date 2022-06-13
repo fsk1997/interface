@@ -31,11 +31,14 @@ const Layout = ({
         customOgImage={customOgImage}
         customURL={customURL}
       />
-      <div className={styles.layout}>
+      <div className={`${styles.layout} ${isHome && styles.layoutRestrict}`}>
         
-        <div className={styles.content}>
+        {notHome && <div className={styles.sidebarHolder}></div> }
+        {notHome && <div className={styles.sidebar}><Menu/></div> }
+        
+        <div className={`${styles.content} ${notHome && styles.sidebarTrue}`}>
           <header className={styles.header}>
-            <div className={styles.headerLogo}>
+            <div className={`${styles.headerLogo} ${isHome && styles.logoVisible}`}>
               <Logo/>
             </div>
             

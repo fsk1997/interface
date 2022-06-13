@@ -84,6 +84,8 @@ Content
 Header
 =====================*/
 .header {
+    background-color: var(--gold4);
+    transition: var(--transition-fast);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +97,18 @@ Header
 }
 
 .headerLogo {
+    /* width: 100%; */
     visibility: block;
+}
+
+@media (min-width:768px) {
+    .headerLogo {
+        visibility: hidden;
+    }
+}
+
+.logoVisible{
+    visibility: visible;
 }
 
 .controls{
@@ -116,7 +129,14 @@ Header
     cursor: pointer;
 }
 
+@media (min-width:768px) {
+    .hamburgerIcon {
+        display: none;
+    }
+}
+
 .headerHolder{
+    /* background-color: red; */
     width: 100%;
     padding-bottom: 3.1rem;
 }
@@ -170,5 +190,5 @@ Dialog Menu
     border: none;
     cursor: pointer;
     margin-top: 1.3rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }

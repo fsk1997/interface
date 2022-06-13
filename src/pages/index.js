@@ -1,24 +1,8 @@
-import React from "react";
+import React from 'react';
 import { Link } from "gatsby";
-import Layout from "../components/Layout";
-import { useStaticQuery, graphql } from "gatsby";
-import * as styles from "./index.module.css"
+import Layout from "../components/Layout"
 
 const Index = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allPageJson {
-        edges {
-          node {
-            ...projectFragment
-          }
-        }
-      }
-    }
-  `);
-
-  const projects = data.allPageJson.edges;
-
   return (
     <Layout
     // customTitle={customTitle}
@@ -26,21 +10,10 @@ const Index = () => {
     // customOgImage={customOgImage}
     // customURL={customURL}
     >
-      <div className={styles.projectList}>
-        {projects.map((project) => {
-          const d = project.node;
-
-          return (
-            <Link to={`/${d.slug}`} key={d.slug}>
-              <div>
-                <h3>{d.title}</h3>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+     <p>hello</p>
     </Layout>
   );
-};
+}
 
-export default Index;
+
+export default Index

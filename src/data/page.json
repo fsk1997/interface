@@ -2,7 +2,7 @@
   {
     "title": "Dialog Height Transition",
     "slug": "dialog-height-transition",
-    "description": "some description",
+    "description": "Dialog Height Transition",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
@@ -11,7 +11,7 @@
   {
     "title": "Sticky Header Links",
     "slug": "sticky-header-links",
-    "description": "some description",
+    "description": "Sticky Header Links",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
@@ -20,7 +20,7 @@
   {
     "title": "Fading Backdrop Blur",
     "slug": "fading-backdrop-blur",
-    "description": "some description",
+    "description": "Fading Backdrop Blur",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
@@ -29,16 +29,16 @@
   {
     "title": "Loaded Image Transition",
     "slug": "loaded-image-transition",
-    "description": "some description",
+    "description": "Loaded Image Transition",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
     "mode": "desktop"
   },
   {
-    "title": "Bottom Tab Navigator (Still Buggy)",
+    "title": "Bottom Tab Navigator",
     "slug": "bottom-tab-navigator",
-    "description": "some description",
+    "description": "Bottom Tab Navigator",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
@@ -47,7 +47,7 @@
   {
     "title": "iOS Header",
     "slug": "ios-header",
-    "description": "some description",
+    "description": "iOS Header",
     "created_at": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",

@@ -1,14 +1,15 @@
 .wrapper{
-    max-width: 90vw;
-    margin: 0 auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem auto;
     position: relative;
     overflow: hidden;
     border-radius: 0.25rem;
-    /* aspect-ratio: 16/9; */
     background-color: black; /*important so there is no "white line" in the middle*/
+}
 
+@media (min-width: 768px){
+    .wrapper{
+        width: 50%;
+    }
 }
 
 .wrapper img {

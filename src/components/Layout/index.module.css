@@ -7,27 +7,27 @@ Layout
     position: relative;
 }
 @media (min-width:640px) {
-    .layoutRestrict {
+    .layoutRestrict, .headerRestrict {
         max-width: var(--sm);
     }
 }
 @media (min-width:768px) {
-    .layoutRestrict {
+    .layoutRestrict, .headerRestrict {
         max-width: var(--md);
     }
 }
 @media (min-width:1024px) {
-    .layoutRestrict {
+    .layoutRestrict, .headerRestrict {
         max-width: var(--lg);
     }
 }
 @media (min-width:1280px) {
-    .layoutRestrict {
+    .layoutRestrict, .headerRestrict {
         max-width: var(--xl);
     }
 }
 @media (min-width:1536px) {
-    .layoutRestrict {
+    .layoutRestrict, .headerRestrict {
         max-width: var(--2xl);
     }
 }
@@ -75,29 +75,26 @@ Content
     flex-grow: 1;
 }
 
-.sidebarTrue{
-    padding: 0rem 1.5rem;
-}
-
 
 /* ====================
 Header
 =====================*/
 .header {
-    background-color: var(--gold4);
-    transition: var(--transition-fast);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: fixed;
-    right: 0;
-    z-index: 10;
     padding: 0rem 1rem;
+    margin: 0 auto;
+}
+
+.headerNoPadding{
+    /* position: fixed;
+    z-index: 10; */
+    padding: 0rem;
 }
 
 .headerLogo {
-    /* width: 100%; */
     visibility: block;
 }
 
@@ -106,6 +103,7 @@ Header
         visibility: hidden;
     }
 }
+
 
 .logoVisible{
     visibility: visible;
@@ -135,11 +133,6 @@ Header
     }
 }
 
-.headerHolder{
-    /* background-color: red; */
-    width: 100%;
-    padding-bottom: 3.1rem;
-}
 
 
 
@@ -190,5 +183,5 @@ Dialog Menu
     border: none;
     cursor: pointer;
     margin-top: 1.3rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }

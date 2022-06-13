@@ -36,8 +36,8 @@ const Layout = ({
         {notHome && <div className={styles.sidebarHolder}></div> }
         {notHome && <div className={styles.sidebar}><Menu/></div> }
         
-        <div className={`${styles.content} ${notHome && styles.sidebarTrue}`}>
-          <header className={styles.header}>
+        <div className={`${styles.content}`}>
+          <header className={`${styles.header} ${isHome && styles.headerRestrict} ${isHome && styles.headerNoPadding}`}>
             <div className={`${styles.headerLogo} ${isHome && styles.logoVisible}`}>
               <Logo/>
             </div>
@@ -49,8 +49,6 @@ const Layout = ({
               </button>
             </div>
           </header>
-
-          <div className={styles.headerHolder}>&nbsp;</div>
 
           <main className={styles.main}>
             {children}

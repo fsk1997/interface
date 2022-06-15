@@ -11,13 +11,13 @@ import { projectFragment } from "../../fragments/projectFragment";
 const BottomTabNavigator = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "bottom-tab-navigator" }) {
+      projectJson(slug: { eq: "bottom-tab-navigator" }) {
         ...projectFragment
       }
     }
   `);
 
-  const project = data.pageJson;
+  const project = data.projectJson;
 
   const [dismiss, setDismiss] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);

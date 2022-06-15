@@ -9,13 +9,13 @@ import { projectFragment } from "../../fragments/projectFragment";
 const DialogHeightTransition = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "dialog-height-transition" }) {
+      projectJson(slug: { eq: "dialog-height-transition" }) {
         ...projectFragment
       }
     }
   `);
 
-  const project = data.pageJson;
+  const project = data.projectJson;
 
   const [showDialog, setShowDialog] = useState(false);
   const [switchContent, setSwitchContent] = useState(false);

@@ -10,13 +10,13 @@ import { projectFragment } from "../../fragments/projectFragment";
 const IosHeader = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "ios-header" }) {
+      projectJson(slug: { eq: "ios-header" }) {
         ...projectFragment
       }
     }
   `);
 
-  const project = data.pageJson;
+  const project = data.projectJson;
 
   const [smallerHeaderFont, setSmallerHeaderFont] = useState(1);
   const [lastScrollTop, setLastScrollTop] = useState(0);

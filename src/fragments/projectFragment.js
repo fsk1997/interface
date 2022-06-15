@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 
 export const projectFragment = graphql`
-  fragment projectFragment on PageJson {
+  fragment projectFragment on ProjectJson {
     created_at
     description
     github_css

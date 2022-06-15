@@ -7,7 +7,7 @@ import * as styles from "./index.module.css";
 const Index = () => {
   const data = useStaticQuery(graphql`
     {
-      allPageJson {
+      allProjectJson {
         edges {
           node {
             ...projectFragment
@@ -17,7 +17,7 @@ const Index = () => {
     }
   `);
 
-  const projects = data.allPageJson.edges;
+  const projects = data.allProjectJson.edges;
 
   return (
     <Layout

@@ -8,13 +8,13 @@ import { projectFragment } from "../../fragments/projectFragment";
 const StickyHeaderLinks = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "sticky-header-links" }) {
+      projectJson(slug: { eq: "sticky-header-links" }) {
         ...projectFragment
       }
     }
   `);
 
-  const project = data.pageJson
+  const project = data.projectJson
 
   return (
     <Layout

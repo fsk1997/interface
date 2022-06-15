@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 const Menu = () => {
   const data = useStaticQuery(graphql`
     {
-      allPageJson {
+      allProjectJson {
         edges {
           node {
             created_at
@@ -24,7 +24,7 @@ const Menu = () => {
     }
   `);
 
-  const projects = data.allPageJson.edges;
+  const projects = data.allProjectJson.edges;
 
   return (
     <div className={styles.sidebar}>

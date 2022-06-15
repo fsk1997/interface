@@ -1,5 +1,14 @@
 [
   {
+    "title": "Animated Gradient SVG Button",
+    "slug": "animated-gradient-svg-button",
+    "description": "Animated Gradient SVG Button",
+    "created_at": "12th January 2022",
+    "github_js": "https://github.com",
+    "github_css": "https://github.com",
+    "mode": "desktop"
+  },
+  {
     "title": "Dialog Height Transition",
     "slug": "dialog-height-transition",
     "description": "Dialog Height Transition",

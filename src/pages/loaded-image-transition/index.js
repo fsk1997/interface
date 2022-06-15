@@ -52,13 +52,13 @@ const RefreshButton = () => {
 const LoadedImageTransition = () => {
   const data = useStaticQuery(graphql`
     {
-      pageJson(slug: { eq: "loaded-image-transition" }) {
+      projectJson(slug: { eq: "loaded-image-transition" }) {
         ...projectFragment
       }
     }
   `);
 
-  const project = data.pageJson;
+  const project = data.projectJson;
 
   return (
     <Layout

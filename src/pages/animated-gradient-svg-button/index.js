@@ -18,8 +18,8 @@ const AnimatedGradientIcon = () => {
 
   const project = data.projectJson;
 
-  const buttonRef = useRef(null);
   const [active, setActive] = useState(active);
+  const buttonRef = useRef(null);
 
   return (
     <Layout

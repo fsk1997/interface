@@ -15,6 +15,11 @@
     transform: scale(100%);
 }
 
+.button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .scaleButtonAnimation{
     animation: scale 0.2s ease-in;
 }

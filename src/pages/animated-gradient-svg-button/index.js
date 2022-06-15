@@ -34,6 +34,7 @@ const AnimatedGradientIcon = () => {
           className={`${styles.button} ${active &&
             styles.scaleButtonAnimation}`}
           onClick={() => setActive(!active)}
+          onMouseDown={(event)=>event.preventDefault()}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

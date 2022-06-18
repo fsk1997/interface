@@ -8,10 +8,10 @@ import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
 import { projectFragment } from "../../fragments/projectFragment";
 
-const AnimatedGradientIcon = () => {
+const DraggableDialogue = () => {
   const data = useStaticQuery(graphql`
     {
-      projectJson(slug: { eq: "figma-comment" }) {
+      projectJson(slug: { eq: "draggable-dialogue" }) {
         ...projectFragment
       }
     }
@@ -20,37 +20,23 @@ const AnimatedGradientIcon = () => {
   const project = data.projectJson;
 
   const [expand, setExpand] = useState(false);
-  const draggableRef = useRef(null);
 
-  const dragStart = e => {
-    console.log(draggableRef.current.state);
-    if (draggableRef.current.state.dragging) {
-      if (expand == true) {
-        setTimeout(() => {
-          setExpand(true);
-        }, 150);
-      }
-      if (expand == false) {
-        setTimeout(() => {
-          setExpand(false);
-        }, 150);
-      }
+  const evaluateExpand = () =>{
+    if (expand == true){
+      setExpand(true)
     }
-  };
-
-
-  const dragStop = e => {
-    if (expand == true) {
-      setTimeout(() => {
-        setExpand(true);
-      }, 150);
+    if (expand == false){
+      setExpand(false)
     }
-    if (expand == false) {
-      setTimeout(() => {
-        setExpand(false);
-      }, 150);
+  }
+  const reverseEvaluateExpand = () =>{
+    if (expand == true){
+      setExpand(false)
     }
-  };
+    if (expand == false){
+      setExpand(true)
+    }
+  }
 
   return (
     <Layout
@@ -60,18 +46,13 @@ const AnimatedGradientIcon = () => {
       projectMode={project.mode}
     >
       <div className={styles.page}>
-        <Draggable
-          onDrag={e => dragStart(e)}
-          // onStop={e => dragStop(e)}
-          ref={draggableRef}
-        >
-          <div className={styles.outerWrapper}>
-            <div
-              onPointerUp={() => setExpand(!expand)}
-              className={`${styles.wrapper} ${expand &&
-                styles.wrapperExtended}`}
-              style={{ backgroundColor: "#1877F2" }}
-            >
+        <Draggable onDrag={() =>setExpand(false)}>
+          <div
+            onPointerUp={() => setExpand(!expand)}
+            className={styles.outerWrapper}
+            data-expand={expand}
+          >
+            <div className={`${styles.wrapper} ${expand && styles.wrapperExtended}`}>
               <div className={styles.imageWrapper}>
                 <img
                   draggable={false}
@@ -94,4 +75,4 @@ const AnimatedGradientIcon = () => {
   );
 };
 
-export default AnimatedGradientIcon;
+export default DraggableDialogue;

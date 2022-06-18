@@ -14,7 +14,15 @@
     overflow:hidden;
 }
 
+.outerWrapper{
+    background-color: transparent;
+    border: none;
+    transition: none;
+    text-align: left;
+}
+
 .wrapper{
+    background-color: #1877F2;
     display: flex;
     flex-direction: row;
     gap: 0.625rem;
@@ -27,7 +35,8 @@
     overflow: hidden;
     transition: var(--fc-transition-fast);
     cursor: pointer;
-    transform: translateX(50%) translateY(-50%); /*Ensure the content always start from left bottom point*/
+    transform: translateX(50%) translateY(-50%); 
+    /*Ensure the content always start from left bottom point*/
 }
 
 .wrapper:hover{

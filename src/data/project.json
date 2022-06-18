@@ -6,6 +6,8 @@
     "created_at": "18th June 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -15,6 +17,8 @@
     "created_at": "15th June 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -22,8 +26,11 @@
     "slug": "dialog-height-transition",
     "description": "Dialog Height Transition",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -31,8 +38,11 @@
     "slug": "sticky-header-links",
     "description": "Sticky Header Links",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -40,8 +50,11 @@
     "slug": "fading-backdrop-blur",
     "description": "Fading Backdrop Blur",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -49,8 +62,11 @@
     "slug": "loaded-image-transition",
     "description": "Loaded Image Transition",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "desktop"
   },
   {
@@ -58,8 +74,11 @@
     "slug": "bottom-tab-navigator",
     "description": "Bottom Tab Navigator",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "mobile"
   },
   {
@@ -67,8 +86,11 @@
     "slug": "ios-header",
     "description": "iOS Header",
     "created_at": "12th January 2022",
+    "last_updated": "12th January 2022",
     "github_js": "https://github.com",
     "github_css": "https://github.com",
+    "status": "beta",
+    "version": "v0.1",
     "mode": "mobile"
   }
 ]

@@ -29,14 +29,6 @@ const DraggableDialogue = () => {
       setExpand(false)
     }
   }
-  const reverseEvaluateExpand = () =>{
-    if (expand == true){
-      setExpand(false)
-    }
-    if (expand == false){
-      setExpand(true)
-    }
-  }
 
   return (
     <Layout
@@ -46,9 +38,9 @@ const DraggableDialogue = () => {
       projectMode={project.mode}
     >
       <div className={styles.page}>
-        <Draggable>
+        <Draggable onDrag={() => evaluateExpand()}>
           <button
-            onPointerUp={() => setExpand(!expand)}
+            onPointerUp={() => setExpand(true)}
             onBlur={() => setExpand(false)}
             className={styles.outerWrapper}
             data-expand={expand}

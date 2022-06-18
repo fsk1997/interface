@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 export const projectFragment = graphql`
   fragment projectFragment on ProjectJson {
     created_at
+    last_updated
     description
     github_css
     github_js
@@ -11,5 +12,7 @@ export const projectFragment = graphql`
     title
     slug
     mode
+    status
+    version
   }
 `;

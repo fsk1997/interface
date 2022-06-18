@@ -67,8 +67,7 @@ const AnimatedGradientIcon = () => {
         >
           <div className={styles.outerWrapper}>
             <div
-              onClick={() => setExpand(!expand)}
-              // onmou={e => dragStart(e)}
+              onPointerUp={() => setExpand(!expand)}
               className={`${styles.wrapper} ${expand &&
                 styles.wrapperExtended}`}
               style={{ backgroundColor: "#1877F2" }}

@@ -33,8 +33,8 @@ const DraggableDialogue = () => {
         <Draggable ref={draggableRef}>
           <div
             onPointerDown={expand ? ()=>null : () => {setExpand(true)}}
-            onPointerEnter={() => {setExpand(true)}}
-            onPointerLeave={() => {setExpand(false)}}
+            // onPointerEnter={() => {setExpand(true)}}
+            // onPointerLeave={() => {setExpand(false)}}
             className={styles.outerWrapper}
             data-expand={expand}
           >

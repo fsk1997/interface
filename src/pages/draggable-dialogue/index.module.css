@@ -113,8 +113,8 @@
     border:none;
     display:block
 }
-@media (min-width:640px) {
+/* @media (min-width:640px) {
     .nameRow > button {
         display: none;
     }
-}
+} */

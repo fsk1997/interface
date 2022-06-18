@@ -107,7 +107,14 @@
     letter-spacing: 0.5px;
 }
 
+
 .nameRow > button{
     background-color: transparent;
     border:none;
+    display:block
+}
+@media (min-width:640px) {
+    .nameRow > button {
+        display: none;
+    }
 }

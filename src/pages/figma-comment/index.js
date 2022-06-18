@@ -20,9 +20,37 @@ const AnimatedGradientIcon = () => {
   const project = data.projectJson;
 
   const [expand, setExpand] = useState(false);
+  const draggableRef = useRef(null);
 
-  const [colorDigit1, setColorDigit1] = useState(2);
+  const dragStart = e => {
+    console.log(draggableRef.current.state);
+    if (draggableRef.current.state.dragging) {
+      if (expand == true) {
+        setTimeout(() => {
+          setExpand(true);
+        }, 150);
+      }
+      if (expand == false) {
+        setTimeout(() => {
+          setExpand(false);
+        }, 150);
+      }
+    }
+  };
 
+
+  const dragStop = e => {
+    if (expand == true) {
+      setTimeout(() => {
+        setExpand(true);
+      }, 150);
+    }
+    if (expand == false) {
+      setTimeout(() => {
+        setExpand(false);
+      }, 150);
+    }
+  };
 
   return (
     <Layout
@@ -33,12 +61,14 @@ const AnimatedGradientIcon = () => {
     >
       <div className={styles.page}>
         <Draggable
-          bounds={"parent"}
-          onDrag={() => setExpand(false)}
-          onStop={() => setExpand(!expand)}
+          onDrag={e => dragStart(e)}
+          // onStop={e => dragStop(e)}
+          ref={draggableRef}
         >
           <div className={styles.outerWrapper}>
             <div
+              onClick={() => setExpand(!expand)}
+              // onmou={e => dragStart(e)}
               className={`${styles.wrapper} ${expand &&
                 styles.wrapperExtended}`}
               style={{ backgroundColor: "#1877F2" }}

@@ -17,7 +17,7 @@
 .outerWrapper{
     background-color: transparent;
     border: none;
-    transition: none;
+    transition: var(--fc-transition-fast);
     text-align: left;
 }
 

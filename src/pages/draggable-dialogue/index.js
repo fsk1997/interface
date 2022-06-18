@@ -38,9 +38,9 @@ const DraggableDialogue = () => {
       projectMode={project.mode}
     >
       <div className={styles.page}>
-        <Draggable onDrag={() => evaluateExpand()}>
+        <Draggable onDrag={() => setExpand(false)}>
           <button
-            onPointerUp={() => setExpand(true)}
+            onPointerUp={() => setExpand(!expand)}
             onBlur={() => setExpand(false)}
             className={styles.outerWrapper}
             data-expand={expand}

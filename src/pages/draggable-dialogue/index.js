@@ -62,7 +62,12 @@ const DraggableDialogue = () => {
                 />
               </div>
               <div className={styles.commentWrapper}>
-                <p>Tim Tough Cookie</p>
+                <div className={styles.nameRow}>
+                  <p>Tim Tough Cookie</p>
+                  <button onClick={()=>setExpand(false)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="16" y1="6" x2="6" y2="16"></line><line x1="6" y1="6" x2="16" y2="16"></line></svg>
+                  </button>
+                </div>
                 <p>
                   Good Morning! I'm so excited to announce our new product line
                   that is adored by fans around the world.

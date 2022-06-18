@@ -47,7 +47,7 @@
 .wrapperExtended{
     border-radius: 1.25rem 1.25rem 1.25rem 0rem;
     padding: 0.75rem;
-    width: 18rem;
+    width: 17.5rem;
     height: auto;
     max-width: 90vw;
     box-shadow: rgba(253, 231, 231, 0.2) 0px 18px 50px -10px;
@@ -91,12 +91,23 @@
     color:white;
 }
 
-.commentWrapper p:nth-child(1){
+.commentWrapper > p{
+    line-height: 125%;
+}
+
+.nameRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameRow > p{
     margin-bottom: 0.25rem;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-.commentWrapper p:nth-child(2){
-    line-height: 125%;
+.nameRow > button{
+    background-color: transparent;
+    border:none;
 }

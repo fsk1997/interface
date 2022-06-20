@@ -59,7 +59,7 @@ const Layout = ({
           
           <footer className={styles.footer}>
             <p>
-              <a target="_blank" href="https://github.com/fsk1997/interface">
+              <a target="_blank" rel="noreferrer" href="https://github.com/fsk1997/interface">
                 Visit the Github Repo
               </a>
             </p>

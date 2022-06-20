@@ -4,7 +4,8 @@ import * as styles from "./index.module.css";
 // Non essential imports
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
-import { projectFragment } from "../../fragments/projectFragment";
+import useSiteMetadata from "../../hooks/useSiteMetadata";
+
 
 // Problem with using plain useState loading method: https://www.codingwithjesse.com/blog/image-onload-isnt-being-called/
 // Solution: https://stackoverflow.com/questions/57162865/react-onload-event-on-image-tag-is-not-getting-called-when-using-conditional-ren
@@ -50,6 +51,8 @@ const RefreshButton = () => {
 };
 
 const LoadedImageTransition = () => {
+  const siteMetadata = useSiteMetadata();
+  
   const data = useStaticQuery(graphql`
     {
       projectJson(slug: { eq: "loaded-image-transition" }) {
@@ -62,9 +65,9 @@ const LoadedImageTransition = () => {
 
   return (
     <Layout
-      customTitle={`${project.title} | Interface. by SayKiat`}
+      customTitle={`${project.title} | ${siteMetadata.title}`}
       customDescription={project.description}
-      customURL={`https://interface.saykiat.com/${project.slug}`}
+      customURL={`${siteMetadata.url}/${project.slug}`}
       projectMode={project.mode}
     >
       <div style={{ textAlign: "center" }}>

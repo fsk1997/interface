@@ -1,14 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "gatsby";
+import React, { useRef, useState } from "react";
 import * as styles from "./index.module.css";
 import Draggable from "react-draggable";
 
 // Non essential imports
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
-import { projectFragment } from "../../fragments/projectFragment";
+import useSiteMetadata from "../../hooks/useSiteMetadata";
 
 const DraggableDialogue = () => {
+  const siteMetadata = useSiteMetadata();
+
   const data = useStaticQuery(graphql`
     {
       projectJson(slug: { eq: "draggable-dialogue" }) {
@@ -24,9 +25,9 @@ const DraggableDialogue = () => {
 
   return (
     <Layout
-      customTitle={`${project.title} | Interface. by SayKiat`}
+      customTitle={`${project.title} | ${siteMetadata.title}`}
       customDescription={project.description}
-      customURL={`https://interface.saykiat.com/${project.slug}`}
+      customURL={`${siteMetadata.url}/${project.slug}`}
       projectMode={project.mode}
     >
       <div className={styles.page}>

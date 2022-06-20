@@ -4,9 +4,11 @@ import * as styles from "./index.module.css";
 // Non essential imports
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
-import { projectFragment } from "../../fragments/projectFragment";
+import useSiteMetadata from "../../hooks/useSiteMetadata";
 
 const DialogHeightTransition = () => {
+  const siteMetadata = useSiteMetadata();
+
   const data = useStaticQuery(graphql`
     {
       projectJson(slug: { eq: "dialog-height-transition" }) {
@@ -68,9 +70,9 @@ const DialogHeightTransition = () => {
 
   return (
     <Layout
-      customTitle={`${project.title} | Interface. by SayKiat`}
+      customTitle={`${project.title} | ${siteMetadata.title}`}
       customDescription={project.description}
-      customURL={`https://interface.saykiat.com/${project.slug}`}
+      customURL={`${siteMetadata.url}/${project.slug}`}
       projectMode={project.mode}
     >
       <div className={styles.page}>

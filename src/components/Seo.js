@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { useStaticQuery, graphql } from "gatsby";
+import useSiteMetadata from "../hooks/useSiteMetadata";
 
 const Seo = ({
   customTitle,
@@ -8,20 +8,8 @@ const Seo = ({
   customOgImage,
   customURL,
 }) => {
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      site {
-        siteMetadata {
-          url
-          twitterUsername
-          title
-          image
-          description
-        }
-      }
-    }
-  `);
-  const meta = data.site.siteMetadata;
+
+  const meta = useSiteMetadata()
   // console.log(meta);
 
   return (

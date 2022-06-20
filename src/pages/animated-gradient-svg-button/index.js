@@ -1,13 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Link } from "gatsby";
+import React, { useRef, useState } from "react";
 import * as styles from "./index.module.css";
 
 // Non essential imports
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
-import { projectFragment } from "../../fragments/projectFragment";
+import useSiteMetadata from "../../hooks/useSiteMetadata";
 
 const AnimatedGradientIcon = () => {
+  const siteMetadata = useSiteMetadata();
+
   const data = useStaticQuery(graphql`
     {
       projectJson(slug: { eq: "animated-gradient-svg-button" }) {
@@ -15,7 +16,6 @@ const AnimatedGradientIcon = () => {
       }
     }
   `);
-
   const project = data.projectJson;
 
   const [active, setActive] = useState(true);
@@ -23,18 +23,19 @@ const AnimatedGradientIcon = () => {
 
   return (
     <Layout
-      customTitle={`${project.title} | Interface. by SayKiat`}
+      customTitle={`${project.title} | ${siteMetadata.title}`}
       customDescription={project.description}
-      customURL={`https://interface.saykiat.com/${project.slug}`}
+      customURL={`${siteMetadata.url}/${project.slug}`}
       projectMode={project.mode}
     >
       <div className={styles.page}>
         <button
           ref={buttonRef}
-          className={`${styles.button} ${active &&
-            styles.scaleButtonAnimation}`}
+          className={`${styles.button} ${
+            active && styles.scaleButtonAnimation
+          }`}
           onClick={() => setActive(!active)}
-          onMouseDown={(event)=>event.preventDefault()}
+          onMouseDown={(event) => event.preventDefault()}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +73,14 @@ const AnimatedGradientIcon = () => {
             </defs>
           </svg>
         </button>
-        <p style={{marginTop:"-0.125rem"}}>Click Me</p>
-        <p style={{fontSize:"0.8rem"}}>Inspired by <a href="https://tantanapp.com/en" target="_blank" rel="norefferer">TanTan's</a> Bottom Navigator Icon</p>
+        <p style={{ marginTop: "-0.125rem" }}>Click Me</p>
+        <p style={{ fontSize: "0.8rem" }}>
+          Inspired by{" "}
+          <a href="https://tantanapp.com/en" target="_blank" rel="norefferer">
+            TanTan's
+          </a>{" "}
+          Bottom Navigator Icon
+        </p>
       </div>
     </Layout>
   );

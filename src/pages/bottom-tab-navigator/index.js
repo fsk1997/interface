@@ -6,9 +6,11 @@ import * as styles from "./index.module.css";
 // Non essential imports
 import Layout from "../../components/Layout";
 import { useStaticQuery, graphql } from "gatsby";
-import { projectFragment } from "../../fragments/projectFragment";
+import useSiteMetadata from "../../hooks/useSiteMetadata";
 
 const BottomTabNavigator = () => {
+  const siteMetadata = useSiteMetadata();
+
   const data = useStaticQuery(graphql`
     {
       projectJson(slug: { eq: "bottom-tab-navigator" }) {
@@ -44,9 +46,9 @@ const BottomTabNavigator = () => {
 
   return (
     <Layout
-      customTitle={`${project.title} | Interface. by SayKiat`}
+      customTitle={`${project.title} | ${siteMetadata.title}`}
       customDescription={project.description}
-      customURL={`https://interface.saykiat.com/${project.slug}`}
+      customURL={`${siteMetadata.url}/${project.slug}`}
       projectMode={project.mode}
     >
         <div className={styles.page}>

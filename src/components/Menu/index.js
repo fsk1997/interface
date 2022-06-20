@@ -10,14 +10,7 @@ const Menu = () => {
       allProjectJson {
         edges {
           node {
-            created_at
-            description
-            github_css
-            github_js
-            id
-            title
-            slug
-            mode
+            ...projectFragment
           }
         }
       }

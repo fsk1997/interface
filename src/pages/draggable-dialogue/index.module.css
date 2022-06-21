@@ -104,7 +104,6 @@
 .nameRow > p{
     margin-bottom: 0.25rem;
     font-weight: 600;
-    letter-spacing: 0.1px;
 }
 
 
@@ -113,8 +112,3 @@
     border:none;
     display:block
 }
-/* @media (min-width:640px) {
-    .nameRow > button {
-        display: none;
-    }
-} */

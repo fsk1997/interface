@@ -38,6 +38,8 @@ const DraggableDialogue = () => {
             // onPointerLeave={() => {setExpand(false)}}
             className={styles.outerWrapper}
             data-expand={expand}
+            onBlur={expand ? () => {setExpand(false)} : ()=>null }
+            tabIndex={"0"}
           >
             <div className={`${styles.wrapper} ${expand && styles.wrapperExtended}`}>
               <div className={styles.imageWrapper}>

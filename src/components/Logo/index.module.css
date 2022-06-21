@@ -13,13 +13,13 @@ Logo
 }
 
 .logo p:nth-child(1) span:nth-child(1) {
-    font-family: var(--font-bold);
+    font-family: var(--font-semibold);
     font-size: 1.25rem;
     color: var(--gray12)
 }
 
 .logo p:nth-child(1) span:nth-child(2) {
-    font-family: var(--font-bold);
+    font-family: var(--font-semibold);
     font-size: 2.5rem;
     color: var(--red9);
     line-height: 0%;

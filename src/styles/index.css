@@ -50,9 +50,7 @@ body {
   font-family: var(--font-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
+  
   color: var(--gray12);
   background-color: var(--gray2);
   transition: var(--transition-fast);
@@ -63,7 +61,7 @@ body {
 Typography
 ========================*/
 h1,h2,h3,h4,h5,h6{
-  font-family: var(--font-bold);
+  font-family: var(--font-semibold);
   letter-spacing: -0.5px;
   color: var(--gray12);
   transition: var(--transition-slow)

@@ -2,14 +2,14 @@
 Sidebar
 ========================*/
 .sidebar {
-    background-color: var(--gold5);
+    background-color: var(--gray4);
     transition: var(--transition-fast);
     width: 100%;
     height: 100%;
     min-height: 100vh;
     padding: 0rem 1rem;
     border-right: 1px solid;
-    border-color: var(--gray7);
+    border-color: var(--gray6);
 }
 
 .projectList{
@@ -19,19 +19,23 @@ Sidebar
     transition: var(--transition-fast);
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
-    padding:2rem 0rem;
+    gap:0.5rem;
+    padding:0.75rem 0rem;
+    margin: 0rem -0.5rem;
 }
 
 .projectList a{
-    color: var(--gold11)
-}
-.projectList a:hover{
-    color: var(--gold12)
-}
-.projectList p{
+    color: var(--gray11);
     padding:0px;
     margin:0px;
-    /* font-size: 1.25rem; */
-    font-family: var(--font-bold);
+    font-family: var(--font-semibold);
+    font-size: small;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    border-radius: 8px;
+}
+
+.projectList a:hover{
+    background-color: var(--gray3);
+    color: var(--gray12)
 }

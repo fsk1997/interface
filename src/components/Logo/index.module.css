@@ -15,7 +15,7 @@ Logo
 .logo p:nth-child(1) span:nth-child(1) {
     font-family: var(--font-bold);
     font-size: 1.25rem;
-    color: var(--gold12)
+    color: var(--gray12)
 }
 
 .logo p:nth-child(1) span:nth-child(2) {

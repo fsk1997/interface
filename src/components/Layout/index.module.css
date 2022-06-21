@@ -65,8 +65,8 @@ Layout
 Content 
 ========================*/
 .content {
-    background-color: var(--gold4);
-    transition: var(--transition-fast);
+    /* background-color: var(--gray2); */
+    /* transition: var(--transition-fast); */
     margin: 0 auto;
     padding: 0rem 1rem;
     min-height: 100vh;
@@ -117,7 +117,7 @@ Header
 }
 
 .hamburgerIcon{
-    color: var(--gold12);
+    color: var(--gray12);
     background: transparent;
     padding: 0;
     display: flex;
@@ -174,7 +174,7 @@ Dialog Menu
     position:absolute;
     top:0;
     right:0;
-    color: var(--gold12);
+    color: var(--gray12);
     background: transparent;
     padding: 0;
     display: flex;

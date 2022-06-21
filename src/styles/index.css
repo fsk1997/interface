@@ -54,7 +54,7 @@ body {
 
 body {
   color: var(--gray12);
-  background-color: var(--gold4);
+  background-color: var(--gray2);
   transition: var(--transition-fast);
 }
 

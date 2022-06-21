@@ -29,9 +29,7 @@ const Menu = () => {
 
           return (
             <Link to={`/${d.slug}`} key={d.slug}>
-              <div>
-                <p>{d.title}</p>
-              </div>
+                {d.title}
             </Link>
           );
         })}

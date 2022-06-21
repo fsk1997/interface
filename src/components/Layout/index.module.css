@@ -5,23 +5,24 @@ Layout
     display: flex;
     margin: 0 auto;
     position: relative;
+    transition: var(--transition-fast);
 }
 @media (min-width:640px) {
     .layoutRestrict, .headerRestrict {
         max-width: var(--sm);
     }
 }
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .layoutRestrict, .headerRestrict {
         max-width: var(--md);
     }
-}
-@media (min-width:1024px) {
+} */
+/* @media (min-width:1024px) {
     .layoutRestrict, .headerRestrict {
         max-width: var(--lg);
     }
-}
-@media (min-width:1280px) {
+} */
+/* @media (min-width:1280px) {
     .layoutRestrict, .headerRestrict {
         max-width: var(--xl);
     }
@@ -30,7 +31,7 @@ Layout
     .layoutRestrict, .headerRestrict {
         max-width: var(--2xl);
     }
-}
+} */
 
 
 
